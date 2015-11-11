@@ -12,6 +12,8 @@ module.exports = {
     publicPath: '/Assignment5/dist/'
   },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
+    new webpack.NoErrorsPlugin(),
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.DefinePlugin({
       'process.env': {
